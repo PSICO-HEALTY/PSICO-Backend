@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../PSICO.Core/PSICO.Core.csproj" />
+  <Project Path="../PSICO.Data/PSICO.Data.csproj" Id="5196ef39-e6e9-46fb-9524-8a1ae7671a5b" />
+  <Project Path="PSICO.WebAPI.csproj" />
+</Solution>

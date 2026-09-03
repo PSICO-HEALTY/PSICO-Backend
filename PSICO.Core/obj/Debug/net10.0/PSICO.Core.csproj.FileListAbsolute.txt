@@ -1,0 +1,15 @@
+E:\Proyectos\PSICO-Backend\PSICO.Core\bin\Debug\net10.0\PSICO.Core.deps.json
+E:\Proyectos\PSICO-Backend\PSICO.Core\bin\Debug\net10.0\PSICO.Core.dll
+E:\Proyectos\PSICO-Backend\PSICO.Core\bin\Debug\net10.0\PSICO.Core.pdb
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.AssemblyInfoInputs.cache
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.AssemblyInfo.cs
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.csproj.CoreCompileInputs.cache
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.dll
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\refint\PSICO.Core.dll
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.pdb
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\ref\PSICO.Core.dll
+E:\Proyectos\PSICO-Backend\PSICO.Core\bin\Debug\net10.0\PSICO.Data.dll
+E:\Proyectos\PSICO-Backend\PSICO.Core\bin\Debug\net10.0\PSICO.Data.pdb
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.csproj.AssemblyReference.cache
+E:\Proyectos\PSICO-Backend\PSICO.Core\obj\Debug\net10.0\PSICO.Core.csproj.Up2Date
