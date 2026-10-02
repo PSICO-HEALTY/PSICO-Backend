@@ -45,6 +45,14 @@ namespace PSICO.Data.DAL.PsicoSettingsContext
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
+                // El backend usa nombres Psico; estas columnas conservan temporalmente
+                // el nombre Solido de la base central heredada hasta migrar el esquema.
+                entity.Property(e => e.Psico_Connection_String)
+                    .HasColumnName("Solido_Connection_String");
+
+                entity.Property(e => e.Psico_Connection_String_Vb)
+                    .HasColumnName("Solido_Connection_String_Vb");
+
                 entity.Property(e => e.FormaFecha).IsRequired();
 
                 entity.Property(e => e.Hora).IsRequired();

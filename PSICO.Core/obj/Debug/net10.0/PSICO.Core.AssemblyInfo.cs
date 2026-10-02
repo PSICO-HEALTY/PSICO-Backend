@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PSICO.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bee596fb0278ab75db11416834cbaa0b3aa3ef4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PSICO.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PSICO.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

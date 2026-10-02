@@ -7,31 +7,10 @@
       "RelativeMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|e:\\proyectos\\psico-backend\\psico.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{57D8B751-2B0D-14D7-FE5F-D145B177E71C}|..\\PSICO.Core\\PSICO.Core.csproj|e:\\proyectos\\psico-backend\\psico.core\\services\\entidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|e:\\proyectos\\psico-backend\\psico.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|e:\\proyectos\\psico-backend\\psico.webapi\\middlewares\\defaulttenantresolvermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCAB391B-90F9-9735-A7F6-20BBC9F3153F}|PSICO.WebAPI.csproj|solutionrelative:middlewares\\defaulttenantresolvermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57D8B751-2B0D-14D7-FE5F-D145B177E71C}|..\\PSICO.Core\\PSICO.Core.csproj|e:\\proyectos\\psico-backend\\psico.core\\interfaces\\ientidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5196EF39-E6E9-46FB-9524-8A1AE7671A5B}|..\\PSICO.Data\\PSICO.Data.csproj|e:\\proyectos\\psico-backend\\psico.data\\dal\\psicodynamiccontext\\psicodynamicsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5196EF39-E6E9-46FB-9524-8A1AE7671A5B}|..\\PSICO.Data\\PSICO.Data.csproj|e:\\proyectos\\psico-backend\\psico.data\\common\\globalparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5196EF39-E6E9-46FB-9524-8A1AE7671A5B}|..\\PSICO.Data\\PSICO.Data.csproj|e:\\proyectos\\psico-backend\\psico.data\\dal\\psicosettingscontext\\entidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5196EF39-E6E9-46FB-9524-8A1AE7671A5B}|..\\PSICO.Data\\PSICO.Data.csproj|e:\\proyectos\\psico-backend\\psico.data\\dal\\psicosettingscontext\\asociadosxentidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5196EF39-E6E9-46FB-9524-8A1AE7671A5B}|..\\PSICO.Data\\PSICO.Data.csproj|e:\\proyectos\\psico-backend\\psico.data\\dal\\psicodbmanual\\capadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -68,111 +47,16 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-01T22:13:12.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefaultTenantResolverMiddleware.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\Middlewares\\DefaultTenantResolverMiddleware.cs",
-              "RelativeDocumentMoniker": "Middlewares\\DefaultTenantResolverMiddleware.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\Middlewares\\DefaultTenantResolverMiddleware.cs",
-              "RelativeToolTip": "Middlewares\\DefaultTenantResolverMiddleware.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAiwIMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T17:54:41.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEntidadService.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Core\\Interfaces\\IEntidadService.cs",
-              "RelativeDocumentMoniker": "..\\PSICO.Core\\Interfaces\\IEntidadService.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Core\\Interfaces\\IEntidadService.cs",
-              "RelativeToolTip": "..\\PSICO.Core\\Interfaces\\IEntidadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T17:39:22.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PsicoDynamicSqlDbContext.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoDynamicContext\\PsicoDynamicSqlDbContext.cs",
-              "RelativeDocumentMoniker": "..\\PSICO.Data\\DAL\\PsicoDynamicContext\\PsicoDynamicSqlDbContext.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoDynamicContext\\PsicoDynamicSqlDbContext.cs",
-              "RelativeToolTip": "..\\PSICO.Data\\DAL\\PsicoDynamicContext\\PsicoDynamicSqlDbContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T17:10:22.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AsociadosXEntidades.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoSettingsContext\\AsociadosXEntidades.cs",
-              "RelativeDocumentMoniker": "..\\PSICO.Data\\DAL\\PsicoSettingsContext\\AsociadosXEntidades.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoSettingsContext\\AsociadosXEntidades.cs",
-              "RelativeToolTip": "..\\PSICO.Data\\DAL\\PsicoSettingsContext\\AsociadosXEntidades.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:35:39.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Entidades.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoSettingsContext\\Entidades.cs",
-              "RelativeDocumentMoniker": "..\\PSICO.Data\\DAL\\PsicoSettingsContext\\Entidades.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoSettingsContext\\Entidades.cs",
-              "RelativeToolTip": "..\\PSICO.Data\\DAL\\PsicoSettingsContext\\Entidades.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:34:04.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GlobalParams.cs",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\Common\\GlobalParams.cs",
-              "RelativeDocumentMoniker": "..\\PSICO.Data\\Common\\GlobalParams.cs",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\Common\\GlobalParams.cs",
-              "RelativeToolTip": "..\\PSICO.Data\\Common\\GlobalParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:10:23.284Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-01T16:06:05.397Z",
+              "Title": "CapaDatos.cs",
+              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoDbManual\\CapaDatos.cs",
+              "RelativeDocumentMoniker": "..\\PSICO.Data\\DAL\\PsicoDbManual\\CapaDatos.cs",
+              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Data\\DAL\\PsicoDbManual\\CapaDatos.cs",
+              "RelativeToolTip": "..\\PSICO.Data\\DAL\\PsicoDbManual\\CapaDatos.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAiwIgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T14:38:08.736Z",
               "EditorCaption": ""
             },
             {
@@ -183,9 +67,22 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.WebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAiwIwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:28:59.407Z",
+              "WhenOpened": "2026-10-02T14:12:26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EntidadService.cs",
+              "DocumentMoniker": "E:\\Proyectos\\PSICO-Backend\\PSICO.Core\\Services\\EntidadService.cs",
+              "RelativeDocumentMoniker": "..\\PSICO.Core\\Services\\EntidadService.cs",
+              "ToolTip": "E:\\Proyectos\\PSICO-Backend\\PSICO.Core\\Services\\EntidadService.cs",
+              "RelativeToolTip": "..\\PSICO.Core\\Services\\EntidadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwCAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T19:17:45.081Z",
               "EditorCaption": ""
             }
           ]

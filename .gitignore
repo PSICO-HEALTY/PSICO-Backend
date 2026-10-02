@@ -1,0 +1,27 @@
+## Build Folders
+[Bb]in/
+[Oo]bj/
+out/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+.vs/
+.vscode/
+.idea/
+
+## Rider
+*.sln.iml
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## NuGet packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+## Publish Profiles
+PublishProfiles/

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "SOLIDO_WebAPI": {
+    "PSICO_WebAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

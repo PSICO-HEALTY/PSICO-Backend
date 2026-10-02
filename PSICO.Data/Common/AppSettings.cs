@@ -4,7 +4,7 @@
     {
         public int Tenant { get; set; }
         public string Nombre { get; set; }
-        public string Solido_Connection_String { get; set; }
+        public string Psico_Connection_String { get; set; }
         public string Source { get; set; }
         public string Servidor { get; set; }
         public string Puerto { get; set; }
@@ -13,7 +13,6 @@
         public string Hora { get; set; }
         public string Usuario { get; set; }
         public string Pass { get; set; }
-        public string Psico_Connection_String_Vb { get; set; }
 
         public string TipoBd { get; set; }
         public string Dns { get; set; }

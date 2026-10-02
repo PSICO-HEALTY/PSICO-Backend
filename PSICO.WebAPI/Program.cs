@@ -11,6 +11,9 @@ using Microsoft.EntityFrameworkCore;
 using PSICO.Data.DAL.PsicoDynamicContext;
 using Microsoft.Extensions.Caching.Memory;
 using PSICO.Core.Interfaces;
+using PSICO.Core.Services;
+using PSICO.Data.DAL;
+using PSICO.Data.Interfaces.DAL;
 
 var myCors = "myCors";
 
@@ -18,6 +21,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ICapaDatos, CapaDatos>();
+builder.Services.AddScoped<IEntidadService, EntidadService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -76,22 +82,21 @@ var psicoDynamicConnectionString = builder.Configuration.GetConnectionString("Ps
 
 builder.Services.AddDbContext<PsicoDynamicSqlDbContext>((serviceProvider, dbContextBuilder) =>
 {
-    var httpContextAccesor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
+    var appSettings = serviceProvider.GetRequiredService<AppSettings>();
+    var connectionString = appSettings.Psico_Connection_String;
 
-    var tenant = Convert.ToInt32(globalParams.TenantBaseId);
-    try { tenant = Convert.ToInt32(httpContextAccesor.HttpContext.Request.Headers["tenant"].First()); }
-    catch (Exception ex) { }
+    if (string.IsNullOrWhiteSpace(connectionString) &&
+        appSettings.Tenant.ToString() == globalParams.TenantBaseId)
+    {
+        connectionString = psicoDynamicConnectionString;
+    }
 
-    try
+    if (string.IsNullOrWhiteSpace(connectionString))
     {
-        var cache = serviceProvider.GetRequiredService<IMemoryCache>();
-        var entidades = (List<EntidadesData>)cache.Get("Entidades");
-        var companyData = entidades.FirstOrDefault(x => x.Id == tenant);
+        throw new InvalidOperationException($"No hay conexión configurada para el tenant {appSettings.Tenant}.");
     }
-    catch (Exception ex) 
-    {
-        dbContextBuilder.UseSqlServer(psicoDynamicConnectionString);
-    }
+
+    dbContextBuilder.UseSqlServer(connectionString);
 });
 
 //Static global params
@@ -107,7 +112,7 @@ builder.Services.AddScoped(e =>
 
     var tenant = string.Empty;
     try { tenant = httpContextAccesor.HttpContext.Request.Headers["tenant"].First(); }
-    catch (Exception ex) { tenant = globalParams.TenantBaseId; }
+    catch { tenant = globalParams.TenantBaseId; }
 
     return entidadService.InitParams(tenant);
 });
@@ -117,7 +122,7 @@ builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -135,18 +140,6 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 //app.UseRouting();
-
-//Settings Cache data
-var scopeFactory = app.Services.GetService<IServiceScopeFactory>();
-
-using (var scope = scopeFactory.CreateScope())
-{
-    var provider = scope.ServiceProvider;
-
-    var _entidadService = provider.GetRequiredService<IEntidadService>();
-
-    await _entidadService.ActualizarEntidadesCache();
-}
 
 app.UseCors(x =>
     x.AllowAnyOrigin()
@@ -176,4 +169,25 @@ app.UseRequestLocalization(new RequestLocalizationOptions
     SupportedUICultures = supportedCultures
 });
 
-app.Run();
+await app.StartAsync();
+
+try
+{
+    var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
+
+    using var scope = scopeFactory.CreateScope();
+    var entidadService = scope.ServiceProvider.GetRequiredService<IEntidadService>();
+    var cacheTask = entidadService.ActualizarEntidadesCache();
+    var cacheLoaded = await cacheTask.WaitAsync(TimeSpan.FromSeconds(15));
+
+    if (!cacheLoaded)
+    {
+        Console.WriteLine("No se pudo cargar la cache de entidades.");
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error cargando la cache de entidades: {ex.Message}");
+}
+
+await app.WaitForShutdownAsync();
