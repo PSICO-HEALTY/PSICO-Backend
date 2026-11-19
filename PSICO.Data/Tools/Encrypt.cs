@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using PSICO.Data.DTO;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace PSICO.Data.Tools
@@ -144,6 +145,44 @@ namespace PSICO.Data.Tools
             }
 
             return cipherText;
+        }
+
+        #endregion
+
+        #region SHA256 + StringSeed
+
+        private static string ToBase36(long value)
+        {
+            const string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var result = string.Empty;
+            do
+            {
+                result = chars[(int)(value % 36)] + result;
+                value /= 36;
+            } while (value > 0);
+            return result;
+        }
+
+        // La semilla ayuda a reconocer para que proceso se emitio el codigo y cuando vence.
+        // Este formato nuevo solo se usa en cambio/recuperacion; los demas flujos conservan el suyo.
+        public static string CreatePasswordTokenSeed(TokenPurpose purpose, DateTimeOffset issuedAt)
+        {
+            var purposeCode = purpose switch
+            {
+                TokenPurpose.PasswordChange => 'C',
+                TokenPurpose.PasswordReset => 'R',
+                _ => throw new ArgumentOutOfRangeException(nameof(purpose), purpose, "Proposito de token de clave no valido.")
+            };
+            var timestamp = ToBase36(issuedAt.ToUnixTimeSeconds());
+            if (timestamp.Length > 7)
+                throw new InvalidOperationException("La marca de tiempo no cabe en la seed existente.");
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var randomPart = new char[7];
+            for (var i = 0; i < randomPart.Length; i++)
+                randomPart[i] = chars[System.Security.Cryptography.RandomNumberGenerator.GetInt32(chars.Length)];
+
+            return purposeCode + timestamp.PadLeft(7, '0') + new string(randomPart);
         }
 
         #endregion

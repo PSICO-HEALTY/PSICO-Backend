@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>Notificación</title>
+    <!--[if mso]>
+    <noscript>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    </noscript>
+    <![endif]-->
+    <style type="text/css">
+        /* Reset & normalización */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            background-color: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Optimizaciones responsivas móviles */
+        @media only screen and (max-width: 620px) {
+            .outer-wrapper {
+                padding: 20px 10px !important;
+            }
+
+            .container-table {
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 16px !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .mobile-header-padding {
+                padding: 28px 20px 16px 20px !important;
+            }
+
+            .mobile-brand-title {
+                font-size: 18px !important;
+            }
+
+            .mobile-brand-subtitle {
+                font-size: 12px !important;
+            }
+
+            .mobile-saludo {
+                font-size: 16px !important;
+            }
+
+            .mobile-titulo {
+                font-size: 20px !important;
+                line-height: 28px !important;
+            }
+
+            .mobile-text {
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
+
+            .mobile-card-padding {
+                padding: 20px 16px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f1f5f9; width: 100% !important; -webkit-font-smoothing: antialiased;">
+    <!-- Wrapper global con fondo neutro suave -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outer-wrapper" style="table-layout: fixed; background-color: #f1f5f9; padding: 40px 15px;">
+        <tr>
+            <td align="center">
+                <!--[if (gte mso 9)|(IE)]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                <tr>
+                <td align="center" valign="top" width="600">
+                <![endif]-->
+                <!-- Contenedor principal de la tarjeta de correo (max 600px en PC, fluido en móvil) -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="container-table" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05); border: 1px solid #e2e8f0;">
+
+                    <!-- Línea de acento multicolor de identidad de marca -->
+                    <tr>
+                        <td height="5" style="background: #0085ff; background: linear-gradient(90deg, #0085ff 0%, #38bdf8 50%, #f97316 100%); line-height: 5px; font-size: 5px;">&nbsp;</td>
+                    </tr>
+
+                    <!-- Cabecera institucional idéntica a TokenDigital.html -->
+                    <tr>
+                        <td align="center" style="padding: 36px 40px 20px 40px;" class="mobile-header-padding">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="vertical-align: middle; padding-bottom: 12px;">
+                                        <img src="E:\Proyectos\PSICO-Backend\PSICO.WebAPI\Assets\Logo.png" alt="{NOMBREEMPRESA}" width="54" height="54" style="width: 54px; height: 54px; display: block; border: 0;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="mobile-brand-title" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px; line-height: 24px;">
+                                        {NOMBREEMPRESA}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="mobile-brand-subtitle" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; color: #64748b; padding-top: 4px; font-weight: 500;">
+                                        Espacio de bienestar y salud mental
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Divisor decorativo sutil -->
+                    <tr>
+                        <td style="padding: 0 40px;" class="mobile-padding">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td height="1" style="background-color: #f1f5f9; line-height: 1px; font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Contenido central de notificación general -->
+                    <tr>
+                        <td style="padding: 32px 40px 28px 40px;" class="mobile-padding">
+
+                            <!-- Saludo personalizado -->
+                            <p class="mobile-saludo" style="margin: 0 0 14px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 26px; color: #1e293b; font-weight: 600;">
+                                Hola, <span style="color: #0085ff;">{NOMBREUSUARIO}</span>
+                            </p>
+
+                            <!-- Tarjeta principal de la notificación -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; margin: 0 0 24px 0;">
+                                <tr>
+                                    <td style="padding: 24px 24px 20px 24px;" class="mobile-card-padding">
+                                        <!-- Título breve de la notificación -->
+                                        <h1 class="mobile-titulo" style="margin: 0 0 14px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 21px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px; line-height: 28px;">
+                                            {TITULO}
+                                        </h1>
+                                        <!-- Mensaje principal -->
+                                        <div class="mobile-text" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #475569;">
+                                            {MENSAJE}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Bloque complementario / instrucciones ({MENSAJEAUX}) en callout suave.
+                                 Se diseña con estilo fluido y limpio para lucir impecable cuando contiene texto
+                                 y colapsar de forma estética y natural si viene vacío desde el backend -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #eff6ff; border-left: 4px solid #0085ff; border-radius: 0 10px 10px 0; margin-bottom: 8px;">
+                                <tr>
+                                    <td style="padding: 14px 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 22px; color: #1e40af;">
+                                        {MENSAJEAUX}
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer institucional idéntico a TokenDigital.html -->
+                    <tr>
+                        <td align="center" style="background-color: #f8fafc; border-top: 1px solid #eef2f6; padding: 24px 40px;" class="mobile-padding">
+                            <p style="margin: 0 0 6px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #475569;">
+                                {NOMBREEMPRESA} &bull; Cuidado y Salud Mental
+                            </p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; color: #94a3b8; line-height: 18px;">
+                                Mensaje generado de forma automática.<br />
+                                &copy; {YEAR} {NOMBREEMPRESA}. Todos los derechos reservados.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -158,7 +158,6 @@ E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.Generated
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.AssemblyInfoInputs.cache
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.AssemblyInfo.cs
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.csproj.CoreCompileInputs.cache
-E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.sourcelink.json
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\rjimswa.dswa.cache.json
@@ -183,3 +182,5 @@ E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.We.B4D58967.Up2D
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\PSICO.WebAPI.genruntimeconfig.cache
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\ref\PSICO.WebAPI.dll
 E:\Proyectos\PSICO-Backend\PSICO.WebAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+E:\Proyectos\PSICO-Backend\PSICO.WebAPI\bin\Debug\net10.0\SendGrid.dll
+E:\Proyectos\PSICO-Backend\PSICO.WebAPI\bin\Debug\net10.0\StarkbankEcdsa.dll

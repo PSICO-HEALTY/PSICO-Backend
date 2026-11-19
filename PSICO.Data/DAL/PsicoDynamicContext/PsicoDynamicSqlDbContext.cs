@@ -15,6 +15,8 @@ namespace PSICO.Data.DAL.PsicoDynamicContext
 
         public virtual DbSet<actualiza_datos> actualiza_datos { get; set; }
         public virtual DbSet<sys_compania> sys_compania { get; set; }
+        public virtual DbSet<tbl_usuario> tbl_usuario { get; set; }
+        public virtual DbSet<tbl_password> tbl_password { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -94,7 +96,78 @@ namespace PSICO.Data.DAL.PsicoDynamicContext
                     .IsUnicode(false)
                     .HasDefaultValueSql("('N')");
             });
-                OnModelCreatingPartial(modelBuilder);
+
+            modelBuilder.Entity<tbl_usuario>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("tbl_usuario");
+
+                entity.Property(e => e.codigoter)
+                    .IsRequired()
+                    .HasMaxLength(14)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.nombre)
+                    .IsRequired()
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.apellido)
+                    .IsRequired()
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.cedula)
+                    .IsRequired()
+                    .HasMaxLength(14)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.documento)
+                    .IsRequired()
+                    .HasMaxLength(1)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.email)
+                    .IsRequired()
+                    .HasMaxLength(60)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.barrio)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ciudad)
+                    .HasMaxLength(1)
+                    .IsUnicode(false);
+            
+                entity.Property(e => e.pais)
+                    .HasMaxLength(1)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<tbl_password>(entity =>
+            {
+                entity.HasKey(e => e.codigoter);
+
+                entity.Property(e => e.codigoter)
+                    .HasMaxLength(14)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.password)
+                    .HasMaxLength(64)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.StringSeed)
+                    .HasMaxLength(15)
+                    .IsUnicode(true);
+
+                entity.Property(e => e.documento)
+                    .HasMaxLength(1)
+                    .IsUnicode(false);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

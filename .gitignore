@@ -11,6 +11,9 @@ out/
 .vscode/
 .idea/
 
+## Local configuration
+appsettings*.json
+
 ## Rider
 *.sln.iml
 
