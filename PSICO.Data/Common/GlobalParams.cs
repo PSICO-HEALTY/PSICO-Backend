@@ -9,5 +9,6 @@
         public string TenantNombreBase { get; set; }
         public int TokenExpiration { get; set; }
         public string SengridApiKey { get; set; }
+        public string SengridEmailFrom { get; set; }
     }
 }

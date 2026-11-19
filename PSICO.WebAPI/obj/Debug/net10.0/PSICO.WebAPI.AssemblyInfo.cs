@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PSICO.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3988b0323c724eb7e588d0d535406aa0e2588ac1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ca918c777c6c39e3ba53ec2cc6ee982bbd4fbc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PSICO.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PSICO.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

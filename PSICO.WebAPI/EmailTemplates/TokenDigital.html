@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>Token de Seguridad</title>
+    <!--[if mso]>
+    <noscript>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    </noscript>
+    <![endif]-->
+    <style type="text/css">
+        /* Reset & normalización */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            background-color: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Optimizaciones responsivas móviles */
+        @media only screen and (max-width: 620px) {
+            .outer-wrapper {
+                padding: 20px 10px !important;
+            }
+
+            .container-table {
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 16px !important;
+            }
+
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .mobile-header-padding {
+                padding: 28px 20px 16px 20px !important;
+            }
+
+            .token-badge {
+                font-size: 10px !important;
+                letter-spacing: 1.2px !important;
+            }
+
+            .token-text {
+                font-size: 26px !important;
+                letter-spacing: 4px !important;
+                line-height: 32px !important;
+            }
+
+            .mobile-brand-title {
+                font-size: 18px !important;
+            }
+
+            .mobile-brand-subtitle {
+                font-size: 12px !important;
+            }
+
+            .mobile-saludo {
+                font-size: 16px !important;
+            }
+
+            .mobile-text {
+                font-size: 14px !important;
+                line-height: 22px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f1f5f9; width: 100% !important; -webkit-font-smoothing: antialiased;">
+    <!-- Wrapper global con fondo neutro suave -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="outer-wrapper" style="table-layout: fixed; background-color: #f1f5f9; padding: 40px 15px;">
+        <tr>
+            <td align="center">
+                <!--[if (gte mso 9)|(IE)]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                <tr>
+                <td align="center" valign="top" width="600">
+                <![endif]-->
+                <!-- Contenedor principal de la tarjeta de correo (max 600px en PC, fluido en móvil) -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="container-table" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05); border: 1px solid #e2e8f0;">
+
+                    <!-- Línea de acento multicolor de identidad de marca -->
+                    <tr>
+                        <td height="5" style="background: #0085ff; background: linear-gradient(90deg, #0085ff 0%, #38bdf8 50%, #f97316 100%); line-height: 5px; font-size: 5px;">&nbsp;</td>
+                    </tr>
+
+                    <!-- Cabecera institucional -->
+                    <tr>
+                        <td align="center" style="padding: 36px 40px 20px 40px;" class="mobile-header-padding">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="vertical-align: middle; padding-bottom: 12px;">
+                                        <img src="E:\Proyectos\PSICO-Backend\PSICO.WebAPI\Assets\Logo.png" alt="{NOMBREEMPRESA}" width="54" height="54" style="width: 54px; height: 54px; display: block; border: 0;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="mobile-brand-title" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px; line-height: 24px;">
+                                        {NOMBREEMPRESA}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="mobile-brand-subtitle" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; color: #64748b; padding-top: 4px; font-weight: 500;">
+                                        Espacio de bienestar y salud mental
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Divisor decorativo sutil -->
+                    <tr>
+                        <td style="padding: 0 40px;" class="mobile-padding">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td height="1" style="background-color: #f1f5f9; line-height: 1px; font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Contenido central del mensaje -->
+                    <tr>
+                        <td style="padding: 32px 40px 24px 40px;" class="mobile-padding">
+
+                            <!-- Saludo personalizado -->
+                            <p class="mobile-saludo" style="margin: 0 0 16px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 26px; color: #1e293b; font-weight: 600;">
+                                Hola, <span style="color: #0085ff;">{NOMBREUSUARIO}</span>
+                            </p>
+
+                            <!-- Texto explicativo de entrega -->
+                            <p class="mobile-text" style="margin: 0 0 28px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #475569;">
+                                Hemos generado tu token digital de seguridad para tu cuenta asociada a <strong>{EMAIL}</strong>. Utilízalo en la plataforma para completar tu verificación con total tranquilidad.
+                            </p>
+
+                            <!-- Caja principal destacada del Token Digital (foco visual principal) -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8fafc; border: 2px dashed #0085ff; border-radius: 16px; margin: 0 0 28px 0;">
+                                <tr>
+                                    <td align="center" style="padding: 28px 16px;">
+                                        <span class="token-badge" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #0085ff; display: block; margin-bottom: 10px;">
+                                            Tu Token Digital
+                                        </span>
+                                        <div class="token-text" style="font-family: 'SF Pro Display', Consolas, Menlo, Monaco, monospace; font-size: 34px; font-weight: 800; color: #0f172a; letter-spacing: 7px; line-height: 38px; word-break: break-all;">
+                                            {PASSWORDPROVISIONAL}
+                                        </div>
+                                        <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; color: #94a3b8; display: block; margin-top: 10px; font-weight: 500;">
+                                            Ingresa este código exactamente como aparece
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Callout de confidencialidad y resguardo de datos -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #eff6ff; border-left: 4px solid #0085ff; border-radius: 0 10px 10px 0; margin-bottom: 24px;">
+                                <tr>
+                                    <td style="padding: 14px 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #1e40af;">
+                                        <strong>Recordatorio de confidencialidad:</strong> Este token es de uso estrictamente personal. Por tu seguridad y privacidad clínica, nunca compartas este código con ninguna persona.
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Mensaje de mitigación por error de destinatario -->
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #64748b;">
+                                Si tú no solicitaste este código, puedes desestimar este mensaje; tu cuenta permanecerá protegida.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer legal y créditos de marca -->
+                    <tr>
+                        <td align="center" style="background-color: #f8fafc; border-top: 1px solid #eef2f6; padding: 24px 40px;" class="mobile-padding">
+                            <p style="margin: 0 0 6px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #475569;">
+                                {NOMBREEMPRESA} &bull; Cuidado y Salud Mental
+                            </p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; color: #94a3b8; line-height: 18px;">
+                                Mensaje generado de forma automática para {EMAIL}.<br />
+                                &copy; {YEAR} {NOMBREEMPRESA}. Todos los derechos reservados.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
